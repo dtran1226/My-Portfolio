@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <!--Attach CSS file-->
+    <link rel="stylesheet" type="text/css" href="Home.css" />
+</head>
+<body>
+    <div class="persistent">
+        <!--Header (including avatar, name and title-->
+        <div class="header">
+            <div class="siteID">
+                <a href="index.html">
+                    <img src="images/abc.jpg" alt="SiteID" class="siteImg" />
+                </a>
+            </div>
+            <div class="info">
+                <div id="info">
+                    <h1>Dang Tri Thuc Tran</h1>
+                    <h2>Software Developer</h2>
+                </div>
+            </div>
+        </div>
+        <!--Navigation bar-->
+        <ul>
+            <li class="linav"><span onclick="scrollView('proPg')">Profile</span></li>
+            <li class="linav"><span onclick="scrollView('objPg')">Objective</span></li>
+            <li class="linav"><span onclick="scrollView('skiPg')">Skills</span></li>
+            <li class="linav"><span onclick="scrollView('expPg')">Experience</span></li>
+            <li class="linav"><span onclick="scrollView('eduPg')">Education</span></li>
+            <li class="linav"><span onclick="scrollView('actiPg')">Activities & Hobbies</span></li>
+        </ul>
+    </div>
+    <!--Slide Show-->
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="images/vietnam.jpg" style="width:100%; height:388px">
+        </div>
+        <div class="slide fade">
+            <img src="images/software.jpg" style="width:100%; height:388px">
+        </div>
+        <div class="slide fade">
+            <img src="images/adno.jpg" style="width:100%; height:388px">
+        </div>
+        <div class="slide fade">
+            <img src="images/fpts.jpg" style="width:100%; height:388px">
+        </div>
+        <div class="slide fade">
+            <img src="images/conestoga.jpg" style="width:100%; height:388px">
+        </div>
+        <div class="slide fade">
+            <img src="images/fpt.jpg" style="width:100%; height:388px">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- The dots/circles -->
+        <div class="dotGroup">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+        <!--'Know More' clickable text to navigate to Profile section-->
+        <div class="knowMore">
+            <span onclick="scrollView('proPg')">Know More</span>
+        </div>
+    </div>
+    <!--Profile section-->
+    <div id="proPg">
+        <table>
+            <tr>
+                <th>
+                    Profile
+                </th>
+            </tr>
+            <tr>
+                <td onclick="proClick(1)">
+                    Address
+                </td>
+            </tr>
+            <tr>
+                <td onclick="proClick(2)">
+                    Phone
+                </td>
+            </tr>
+            <tr>
+                <td onclick="proClick(3)">
+                    Email
+                </td>
+            </tr>
+            <tr>
+                <td onclick="proClick(4)">
+                    LinkedIn
+                </td>
+            </tr>
+            <tr>
+                <td onclick="proClick(5)">
+                    GitHub
+                </td>
+            </tr>
+        </table>
+        <!--Content space for Profile section. Default is the first part of Profile section (Address)-->
+        <div class="pageContent">
+            <h3>Address</h3>
+            <p>200 Old Carriage, Kitchener, ON (N2P 0C7)</p>
+        </div>
+    </div>
+    <!--Objective section-->
+    <div id="objPg">
+        <table>
+            <tr>
+                <th>
+                    Objective
+                </th>
+            </tr>
+            <tr>
+                <td onclick="objClick(1)">
+                    Objective
+                </td>
+            </tr>
+        </table>
+        <!--Content space for Objective section. Default is the first part of Objective section (Objective)-->
+        <div class="pageContent">
+            <h3>Objective</h3>
+            <p>A new grad from the postgraduate Mobile Solutions Development program at Conestoga College with 1 year of working experience in Software Development looking for a full-time job in software-related fields starting right away.</p>
+        </div>
+    </div>
+    <!--Skills section-->
+    <div id="skiPg">
+        <table>
+            <tr>
+                <th>
+                    Skills
+                </th>
+            </tr>
+            <tr>
+                <td onclick="skiClick(1)">
+                    Programming Skills
+                </td>
+            </tr>
+            <tr>
+                <td onclick="skiClick(2)">
+                    Tools
+                </td>
+            </tr>
+            <tr>
+                <td onclick="skiClick(3)">
+                    Development Methodologies
+                </td>
+            </tr>
+        </table>
+        <!--Content space for Skills section. Default is the first part of Skills section (Programming Skills)-->
+        <div class="pageContent">
+            <h3>Programming Skills</h3>
+            <p><b><u style="color:blue">Application development:</u></b>&nbspC, C++, C#, Java, Android, iOS (Swift), Spring MVC, Hibernate, Servlets, Web Services, JUnit, NUnit.<br /><br /><b><u style="color:blue">Website development:</u></b>&nbspHTML, CSS, JavaScript, Bootstrap, JQuery, AngularJS, NodeJS, XML, JSON.<br /><br /><b><u style="color:blue">System design:</u></b>&nbspUML, Design Patterns, ERD.<br /><br /><b><u style="color:blue">Database processing:</u></b>&nbspMicrosoft SQL Server, MySQL, MongoDB, SQLite.</p>
+        </div>
+    </div>
+    <!--Experience section-->
+    <div id="expPg">
+        <table>
+            <tr>
+                <th>
+                    Experience
+                </th>
+            </tr>
+            <tr>
+                <td onclick="expClick(1)">
+                    AdNovum
+                </td>
+            </tr>
+            <tr>
+                <td onclick="expClick(2)">
+                    FPT Software
+                </td>
+            </tr>
+        </table>
+        <!--Content space for Experience section. Default is the first part of Experience section (AdNovum)-->
+        <div class="pageContent">
+            <h3>AdNovum</h3>
+            <div style="overflow-y:auto; margin-top:-20px">
+                <span id="title">Junior Software Developer</span>
+                <span id="period">Oct 2015 – Feb 2016</span>
+            </div>
+            <p>Part of a team of colleagues from Switzerland, Hungary, Singapore and Vietnam tasked with developing a banking application (using core Java, based on Eclipse RCP) for the biggest bank in Switzerland, which helps to boost customers’ investment to the bank.<br /><br />Frequently joined in meetings with colleagues and experts from different countries to discuss and find out solutions for existing problems.</p>
+        </div>
+    </div>
+    <!--Education section-->
+    <div id="eduPg">
+        <table>
+            <tr>
+                <th>
+                    Education
+                </th>
+            </tr>
+            <tr>
+                <td onclick="eduClick(1)">
+                    Conestoga College
+                </td>
+            </tr>
+            <tr>
+                <td onclick="eduClick(2)">
+                    FPT University
+                </td>
+            </tr>
+        </table>
+        <!--Content space for Education section. Default is the first part of Education section (Conestoga College)-->
+        <div class="pageContent">
+            <h3>Conestoga College (Kitchener, ON)</h3>
+            <div style="overflow-y:auto; margin-top:-20px">
+                <span id="title">Mobile Solutions Development (Postgraduate)</span>
+                <span id="period">Sep 2017 – Apr 2019</span>
+            </div>
+            <p><b><u style="color:blue">Courses:</u></b>&nbspC# Programming, UI Design, System Design and Development, Web Design, Technology Infrastructure, Android, Database Management, Web Technologies, Mobile Design, Software Quality Assurance, iOS development, Design Patterns, Computer and Application Security.<br /><br /><b><u style="color:blue">Certificates:</u></b>&nbspGraduation with Distinction, Dean’s Honour List</p>
+        </div>
+    </div>
+    <!--Activities section-->
+    <div id="actiPg">
+        <table>
+            <tr>
+                <th>
+                    Activities and Hobbies
+                </th>
+            </tr>
+            <tr>
+                <td onclick="actiClick(1)">
+                    Self-Study
+                </td>
+            </tr>
+            <tr>
+                <td onclick="actiClick(2)">
+                    Volunteer
+                </td>
+            </tr>
+            <tr>
+                <td onclick="actiClick(3)">
+                    Team-Building
+                </td>
+            </tr>
+            <tr>
+                <td onclick="actiClick(4)">
+                    Hobbies
+                </td>
+            </tr>
+        </table>
+        <!--Content space for Activities section. Default is the first part of Activities section (Self-Study)-->
+        <div class="pageContent">
+            <h3>Self-Study</h3>
+            <p>Self-study and research to learn new skills and knowledge to improve expertise, such as Android, Swift, AngularJS, NodeJS, JQuery, Bootstrap, CSS, etc.</p>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer style="margin-bottom: 0px; width:99%">
+        <!--Contact information, including Email, Phone and LinkedIn-->
+        <ul class="footer">
+            <li><b><u>Email:</u></b><a href="mailto: thuctdt@gmail.com">&nbspthuctdt@gmail.com</a></li>
+            <li><b><u>Phone:</u></b><span>&nbsp(226) 898-3262</span></li>
+            <li><b><u>LinkedIn:</u></b><a href="https://www.linkedin.com/in/dang-tri-thuc-tran-bb0637105/">&nbspDang Tri Thuc Tran</a></li>
+        </ul>
+    </footer>
+    <!--Attach JavaScript file-->
+    <script type="text/javascript" src="Home.js"></script>
+</body>
+</html>
