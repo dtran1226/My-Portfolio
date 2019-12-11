@@ -1,11 +1,8 @@
-﻿var slideIndex = 1;
+var slideIndex = 1;
 var colorFlag = 0;
-// Starts showing slides automatically
 autoSlide();
-// Calls changeColor() after 1 second
 setTimeout(changeColor, 1000);
 
-// Changes 'Know More' color between 'white' and 'orchid' colors
 function changeColor() {
     var knowMore = document.getElementsByClassName("knowMore")[0];
     if (colorFlag == 0) {
@@ -15,15 +12,13 @@ function changeColor() {
         knowMore.style.color = "orchid";
         colorFlag = 0;
     }
-    // Changes 'Know More' clickable text color every second
     setTimeout(changeColor, 1000);
 }
 
-// Shows previous or next slide when clicking on Prev/Next buttons
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
-// Shows suitable slide when clicking on dots
+
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
@@ -32,34 +27,27 @@ function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("slide");
     var dots = document.getElementsByClassName("dot");
-    // Makes sure slides are switched between first and last slides	
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
-    // Hides all slides first
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    // Inactives all dots first
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    // Displays a specific slide and dot
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
 
-// Automatically changes slides by calling showSlides() every 4 seconds
 function autoSlide() {
     showSlides(slideIndex);
     slideIndex++;
     setTimeout(autoSlide, 4000);
 }
 
-// Scrolls the view to a specific section to see its content
 function scrollView(a) {
     var elmnt = document.getElementById(a);
     elmnt.scrollIntoView();
-    // Needs to adjust a bit based on different window sizes
     var scrolledY = window.scrollY;
 	if (window.innerWidth >= 1000) {
 		window.scroll(0, scrolledY-208); 
@@ -76,9 +64,9 @@ function scrollView(a) {
 	} else {
 		window.scroll(0, scrolledY-218);
 	}
+		
 }
 
-// Shows suitable content when clicking on a sub-section of Profile section
 function proClick(a) {
     var pageCont = document.getElementsByClassName("pageContent")[0];
 	var h3 = pageCont.getElementsByTagName("h3")[0];
@@ -98,9 +86,9 @@ function proClick(a) {
             break;
         case 4:
             h3.innerHTML = "LinkedIn";
-            p.innerHTML = "<a href='https://www.linkedin.com/in/dang-tri-thuc-tran-bb0637105/'>Dang Tri Thuc Tran</a>";
+            p.innerHTML = "<a href='https://www.linkedin.com/in/danny-tran-bb0637105/'>Danny Tran</a>";
             break;
-	case 5:
+		case 5:
             h3.innerHTML = "GitHub";
             p.innerHTML = "<a href='https://github.com/dtran1226'>dtran1226</a>";
             break;
@@ -108,7 +96,7 @@ function proClick(a) {
             break;
     }
 }
-// Shows suitable content when clicking on a sub-section of Objective section
+
 function objClick(a) {
     var pageCont = document.getElementsByClassName("pageContent")[1];
 	var h3 = pageCont.getElementsByTagName("h3")[0];
@@ -116,13 +104,13 @@ function objClick(a) {
     switch (a) {
 		case 1:
             h3.innerHTML = "Objective";
-            p.innerHTML = "A new grad from the postgraduate Mobile Solutions Development program at Conestoga College with 1 year of working experience in Software Development looking for a full-time job in software-related fields starting right away.";
+            p.innerHTML = "A new grad from the postgraduate Mobile Solutions Development program at Conestoga College, with 1 year of working experience at 2 software companies, looking for a full-time job in software-related fields starting as soon as possible.";
             break;
         default:
             break;
     }
 }
-// Shows suitable content when clicking on a sub-section of Skills section
+
 function skiClick(a) {
     var pageCont = document.getElementsByClassName("pageContent")[2];
 	var h3 = pageCont.getElementsByTagName("h3")[0];
@@ -130,21 +118,25 @@ function skiClick(a) {
     switch (a) {
 		case 1:
             h3.innerHTML = "Programming Skills";
-            p.innerHTML = "<b><u style='color:blue'>Application development:</u></b>&nbspC, C++, C#, Java, Android, iOS (Swift), Spring MVC, Hibernate, Servlets, Web Services, JUnit, NUnit.<br /><br /><b><u style='color:blue'>Website development:</u></b>&nbspHTML, CSS, JavaScript, Bootstrap, JQuery, AngularJS, NodeJS, XML, JSON.<br /><br /><b><u style='color:blue'>System design:</u></b>&nbspUML, Design Patterns, ERD.<br /><br /><b><u style='color:blue'>Database processing:</u></b>&nbspMicrosoft SQL Server, MySQL, MongoDB, SQLite.";
+            p.innerHTML = "<b><u style='color:blue'>Application development:</u></b>&nbsp<b>Java/C#</b>, Android/iOS (Swift), C/C++, Spring MVC/Servlets/Hibernate/JSP, JUnit/NUnit, Eclipse RCP.<br></br><b><u style='color:blue'>Website development:</u></b>&nbsp<b>HTML/CSS/JavaScript</b>, Bootstrap/jQuery, AngularJS/NodeJS, JSON/XML, API Web Services (RESTful, SOAP).<br></br><b><u style='color:blue'>System design:</u></b>&nbspUML, Design Patterns, ERD.<br></br><b><u style='color:blue'>Database:</u></b>&nbsp<b>Microsoft SQL Server</b>, MySQL, MongoDB, SQLite.";
             break;
 		case 2:
             h3.innerHTML = "Tools";
-            p.innerHTML = "Visual Studio, NetBeans, Eclipse, IntelliJ, Android Studio, XCode, Microsoft SQL Server, MySQL Workbench, SVN, GitHub, GitKraren, VSCode, Trello, Microsoft Project, JIRA.";
+            p.innerHTML = "Visual Studio, Eclipse, IntelliJ, Android Studio, XCode, SVN, GitHub, GitKraken, VSCode, Trello, Microsoft Project, JIRA, Jenkins, Collaborator.";
             break;
 		case 3:
-            h3.innerHTML = "Development Methodologies";
+            h3.innerHTML = "Software Development Methodologies";
             p.innerHTML = "Waterfall, Scrum (Agile).";
             break;
+		case 4:
+            h3.innerHTML = "Operating Systems";
+            p.innerHTML = "Windows, Linux.";
+            break;	
         default:
             break;
     }
 }
-// Shows suitable content when clicking on a sub-section of Experience section
+
 function expClick(a) {
     var pageCont = document.getElementsByClassName("pageContent")[3];
 	var h3 = pageCont.getElementsByTagName("h3")[0];
@@ -153,19 +145,29 @@ function expClick(a) {
     switch (a) {
 		case 1:
             h3.innerHTML = "AdNovum";
-			div.innerHTML = "<span id='title'>Junior Software Developer</span><span id='period'>Oct 2015 – Feb 2016</span>"
-            p.innerHTML = "Part of a team of colleagues from Switzerland, Hungary, Singapore and Vietnam tasked with developing a banking application (using core Java, based on Eclipse RCP) for the biggest bank in Switzerland, which helps to boost customers’ investment to the bank.<br /><br />Frequently joined in meetings with colleagues and experts from different countries to discuss and find out solutions for existing problems.";
+			div.innerHTML = "<span id='title'>Junior Software Developer</span><span id='period'>Oct 2015 – Feb 2016</span>";
+            p.innerHTML = "Improved customers’ experience by cooperating with colleagues from Switzerland, Hungary, Singapore and Vietnam to design the front-end of a banking application for the biggest bank in Switzerland.<br></br>Boosted customers’ investment to the bank by providing a list of investment options based on customers’ information and interests.<br></br><b><u>Skills:</u></b><br></br>Eclipse RCP framework, core Java, GIT for versions control, Jenkins for build and deploy, JIRA for tasks assignment, Collaborator for code review.";
             break;
 		case 2:
             h3.innerHTML = "FPT Software";
-			div.innerHTML = "<span id='title'>Software Developer (Intern)</span><span id='period'>Jan 2014 – Aug 2014</span>"
-            p.innerHTML = "<b><u style='color:blue'>AMWEB:</u></b>&nbspTested and fixed bugs for TOSHIBA’s content management website in HTML, CSS, JavaScript to make sure the website works properly.<br /><br /><b><u style='color:blue'>DPET:</u></b>&nbspDesigned and built the Android application for Japanese customers from scratch, which is mainly based on voice and face recognition to help customers and their pets remotely and virtually interacting to each other.<br /><br /><b><u style='color:blue'>CPS:</u></b>&nbspMigrated a bus line management website for FUSO corporation using Java, HTML, CSS and JavaScript from the existing C++ application to improve the way users access the services.";
-            break; 
+			div.innerHTML = "<span id='title'>Software Developer (Intern)</span><span id='period'>Jan 2014 – Aug 2014</span>";
+            p.innerHTML = "<b><u>Projects:</u></b><br></br><b><u style='color:blue'>DPET:</u></b>&nbspDesigned and developed the Android application for Japanese customers from scratch, which is mainly based on voice and face recognition to help customers and their pets remotely and virtually interacting to each other.<br></br><b><u style='color:blue'>AMWEB:</u></b>&nbspAssured the TOSHIBA’s content management website works properly by testing and fixing bugs using HTML, CSS and JavaScript.<br></br><b><u style='color:blue'>CPS:</u></b>&nbspImproved the way users access the bus services from FUSO corporation by migrating the existing C++ bus line management application into the website using Java, HTML, CSS and JavaScript.<br></br><b><u>Skills:</u></b><br></br>Java, JSP, Hibernate, JUnit, Android, DB2, SQLite, HTML, CSS, JavaScript, Android Speech Recognizer, SCRUM.";
+            break;
+		case 3:
+            h3.innerHTML = "Conestoga College";
+			div.innerHTML = "<span id='title'>Capstone Project</span><span id='period'>Jan 2019 – Apr 2019</span>";
+            p.innerHTML = "Piloted main features of a desktop-based Hospital Management System to mobile versions for more convenient by developing both Android and iOS applications.<br></br>Propitiated users (patients, doctors and nurses) in their daily tasks by implementing appointments management function to the application.<br></br>Increased users’ acknowledgement by integrating Notifications function to the application, so the users can quickly response and adapt to the newest updates.<br></br><b><u>Skills:</u></b><br></br>Java for Android, Swift for iOS, MySQL for DB, Microsoft Project for project management, Trello for tasks management.";
+            break;
+		case 4:
+            h3.innerHTML = "FPT University";
+			div.innerHTML = "<span id='title'>Capstone Project</span><span id='period'>May 2015 – Aug 2015</span>";
+            p.innerHTML = "Helped tourists from all over the world discover Danang city in the easiest and most enjoyable way via a Google Map-based responsive website.<br></br>Enhanced tourists’ experience by providing detailed information of tons of great events, places, hotels, restaurants as suggestions for their selection.<br></br>Saved tourists’ time by applying algorithms to allow them to visit all the places they plan to go in the shortest time, as well as suggested nearby places to pass by.<br></br><b><u>Skills:</u></b><br></br>Spring Boot, Java, Trello, HTML, CSS, JavaScript, Google Map APIs, SQL.";
+            break;
         default:
             break;
     }
 }
-// Shows suitable content when clicking on a sub-section of Education section
+
 function eduClick(a) {
     var pageCont = document.getElementsByClassName("pageContent")[4];
 	var h3 = pageCont.getElementsByTagName("h3")[0];
@@ -174,19 +176,19 @@ function eduClick(a) {
     switch (a) {
 		case 1:
             h3.innerHTML = "Conestoga College (Kitchener, ON)";
-			div.innerHTML = "<span id='title'>Mobile Solutions Development (Postgraduate)</span><span id='period'>Sep 2017 – Apr 2019</span>"
-            p.innerHTML = "<b><u style='color:blue'>Courses:</u></b>&nbspC# Programming, UI Design, System Design and Development, Web Design, Technology Infrastructure, Android, Database Management, Web Technologies, Mobile Design, Software Quality Assurance, iOS development, Design Patterns, Computer and Application Security.<br /><br /><b><u style='color:blue'>Certificates:</u></b>&nbspGraduation with Distinction, Dean’s Honour List";
+			div.innerHTML = "<span id='title'>Mobile Solutions Development (Postgraduate)</span><span id='period'>Sep 2017 – Apr 2019</span>";
+            p.innerHTML = "<b><u style='color:blue'>GPA:</u></b>&nbsp3.86/4.00<br></br><b><u style='color:blue'>Certificates:</u></b>&nbspGraduation with Distinction, Dean’s Honour List.<br></br><b><u style='color:blue'>Courses:</u></b>&nbspC# Programming, UI Design, System Design and Development, Android, Database Management, Web Technologies, Software Quality Assurance, iOS development, Design Patterns, Computer and Application Security.<br></br><b><u style='color:blue'>Outcomes:</u></b>&nbspAll my software development skills and knowledge have been significantly sharpened and improved in detail.";
             break;
 		case 2:
             h3.innerHTML = "FPT University (Ho Chi Minh, Vietnam)";
-			div.innerHTML = "<span id='title'>Software Engineering (Bachelor)</span><span id='period'>Sep 2011 – Sep 2015</span>"
-            p.innerHTML = "<b><u style='color:blue'>Courses:</u></b>&nbspCore Java, Advanced Java, C# .NET, Data Structure and Algorithms, Object Oriented Paradigm, Advanced Database, Software Architect and Design, Web Development, Operating System, Advanced Math, Discrete Math, Statistic and Probability, Software Requirements, Software Quality and Testing, Human Computer, Interaction, Project Management, Computer Network, Cloud Computing.<br /><br /><b><u style='color:blue'>Certificates:</u></b>&nbspEXCELLENT (1 semester), GOOD student certificate (3 semesters), Highest Grade Point certificate in Advanced Math, Online Programming Foundations with JavaScript, HTML and CSS in Coursera (from Duke University)<br /><br /><b><u style='color:blue'>Capstone Project (Danang Utility Map):</u></b>&nbspAnalyzed, designed, implemented, tested and managed a Google Map-based responsive website which helps tourists discover Danang city in the easiest, fastest and most enjoyable way."
+			div.innerHTML = "<span id='title'>Software Engineering (Bachelor)</span><span id='period'>Sep 2011 – Sep 2015</span>";
+            p.innerHTML = "<b><u style='color:blue'>GPA:</u></b>&nbsp7.92/10.00<br></br><b><u style='color:blue'>Certificates:</u></b>&nbspEXCELLENT student (1 semester), GOOD student (3 semesters), Highest Grade in Advanced Math.<br></br><b><u style='color:blue'>Courses:</u></b>&nbspJava, C# .NET, Data Structure and Algorithms, Object Oriented Paradigm, Database, Software Architect and Design, Web Development, Operating System, Advanced Math, Discrete Math, Statistic and Probability, Software Requirements, Software Quality and Testing, Human Computer Interaction, Project Management, Computer Network, Cloud Computing.<br></br><b><u style='color:blue'>Outcomes:</u></b>&nbspI gained the general understanding of all aspects of the software engineering, from analyzing customer’s requirements to design, implementation, testing and maintenance; especially, my Java and SQL skills.";
             break; 
         default:
             break;
     }
 }
-// Shows suitable content when clicking on a sub-section of Activities section
+
 function actiClick(a) {
     var pageCont = document.getElementsByClassName("pageContent")[5];
 	var h3 = pageCont.getElementsByTagName("h3")[0];
@@ -194,19 +196,19 @@ function actiClick(a) {
     switch (a) {
 		case 1:
             h3.innerHTML = "Self-Study";
-            p.innerHTML = "Self-study and research to learn new skills and knowledge to improve expertise, such as Android, Swift, AngularJS, NodeJS, JQuery, Bootstrap, CSS, etc.";
+            p.innerHTML = "Self-study and research to learn new skills and knowledge to improve expertise, such as Android, Swift, AngularJS, NodeJS, JQuery, Bootstrap, CSS, etc.<br></br>Achieved online &#34Programming Foundations with JavaScript, HTML and CSS&#34 course from Duke University on Coursera.";
             break;
 		case 2:
             h3.innerHTML = "Volunteer";
-            p.innerHTML = "Worked as a volunteer in Conestoga College to support new students with their first steps in Canada.<br /><br />Joined in Blood Donation Day twice during studying and working period."
+            p.innerHTML = "Worked as a volunteer in Conestoga College to support new students with their first steps in Canada.<br></br>Joined in Blood Donation Day twice during studying and working period.<br></br>Achieved Co-Curricular Records from Conestoga College by doing volunteers and joining workshops.";
             break;
 		case 3:
             h3.innerHTML = "Team-Building";
-            p.innerHTML = "Took part in sports (handball, football, table-tennis, billiards) and entertainment (dancing, singing) activities of former companies during working time."
+            p.innerHTML = "Took part in sports (handball, football, table-tennis, billiards) and entertainment (dancing, singing) activities of former companies during working time.";
             break;
 		case 4:
             h3.innerHTML = "Hobbies";
-            p.innerHTML = "Love travelling and discovering new places around the world.<br /><br />Enjoying listening to music and self-performing various genres of songs."
+            p.innerHTML = "Love travelling and discovering new places around the world.<br></br>Enjoying listening to music and self-performing various genres of songs.";
             break; 
         default:
             break;
