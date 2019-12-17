@@ -292,11 +292,13 @@ tr:nth-child(even) {
         background-color: black;
         margin-top: -3px;
         padding-bottom: 2px;
+	overflow-wrap: break-word;
     }
 
     .pageContent p {
         text-align: center;
         font-size: 18px;
+	overflow-wrap: break-word;
     }
 
 /* Set sections' content peroperties*/
