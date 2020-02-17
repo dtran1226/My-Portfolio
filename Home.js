@@ -176,7 +176,7 @@ function eduClick(a) {
     switch (a) {
 		case 1:
             h3.innerHTML = "Conestoga College (Kitchener, ON)";
-			div.innerHTML = "<span id='title'>Mobile Solutions Development (Postgraduate)</span><span id='period'>Sep 2017 – Apr 2019</span>";
+			div.innerHTML = "<span id='title'>Mobile Solutions Development (Postgraduate)</span><span id='period'>Sep 2017 – Jun 2019</span>";
             p.innerHTML = "<b><u style='color:blue'>GPA:</u></b>&nbsp3.86/4.00<br></br><b><u style='color:blue'>Certificates:</u></b>&nbspGraduation with Distinction, Dean’s Honour List, Co-Curricular Record.<br></br><b><u style='color:blue'>Courses:</u></b>&nbspC# Programming, UI Design, System Design and Development, Android, Database Management, Web Technologies, Software Quality Assurance, iOS development, Design Patterns, Computer and Application Security.<br></br><b><u style='color:blue'>Outcomes:</u></b>&nbspAll my software development skills and knowledge have been significantly sharpened and improved in detail.";
             break;
 		case 2:
