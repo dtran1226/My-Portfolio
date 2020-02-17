@@ -104,7 +104,7 @@ function objClick(a) {
     switch (a) {
 		case 1:
             h3.innerHTML = "Objective";
-            p.innerHTML = "A new grad from the postgraduate Mobile Solutions Development program at Conestoga College, with 1 year of working experience at 2 software companies, looking for a full-time job in software-related fields starting as soon as possible.";
+            p.innerHTML = "A new grad from the postgraduate Mobile Solutions Development program at Conestoga College, with 1 year of work experience at 2 software companies, looking for a full-time job in software-related fields starting as soon as possible.";
             break;
         default:
             break;
@@ -118,15 +118,15 @@ function skiClick(a) {
     switch (a) {
 		case 1:
             h3.innerHTML = "Programming Skills";
-            p.innerHTML = "<b><u style='color:blue'>Application development:</u></b>&nbsp<b>Java/C#</b>, Android/iOS (Swift), C/C++, Spring MVC/Servlets/Hibernate/JSP, JUnit/NUnit, Eclipse RCP.<br></br><b><u style='color:blue'>Website development:</u></b>&nbsp<b>HTML/CSS/JavaScript</b>, Bootstrap/jQuery, AngularJS/NodeJS, JSON/XML, API Web Services (RESTful, SOAP).<br></br><b><u style='color:blue'>System design:</u></b>&nbspUML, Design Patterns, ERD.<br></br><b><u style='color:blue'>Database:</u></b>&nbsp<b>Microsoft SQL Server</b>, MySQL, MongoDB, SQLite.";
+            p.innerHTML = "<b><u style='color:blue'>Application development:</u></b>&nbsp<b>Java, C#</b>, Android, iOS (Swift), C, C++, MVC, <b>Spring Boot</b>, Servlets, Hibernate, JSP, <b>JUnit, NUnit</b>, WPF, Swing, Eclipse RCP.<br></br><b><u style='color:blue'>Website development:</u></b>&nbsp<b>HTML, CSS, JavaScript</b>, Bootstrap, <b>jQuery</b>, AngularJS, NodeJS, <b>JSON, XML</b>, Web Services (<b>RESTful</b>, SOAP).<br></br><b><u style='color:blue'>System design:</u></b>&nbspUML, Design Patterns, MVC, <b>ERD</b>.<br></br><b><u style='color:blue'>Database:</u></b>&nbsp<b>Microsoft SQL Server, MySQL</b>, MongoDB, SQLite, Oracle DB, DB2.";
             break;
 		case 2:
             h3.innerHTML = "Tools";
-            p.innerHTML = "Visual Studio, Eclipse, IntelliJ, Android Studio, XCode, SVN, GitHub, GitKraken, VSCode, Trello, Microsoft Project, JIRA, Jenkins, Collaborator.";
+            p.innerHTML = "Android Studio, <b>Visual Studio, Eclipse, IntelliJ</b>, XCode, SVN, Git, GitKraken, VSCode, Trello, Microsoft Project, JIRA, Jenkins, Collaborator, Maven, Gradle.";
             break;
 		case 3:
             h3.innerHTML = "Software Development Methodologies";
-            p.innerHTML = "Waterfall, Scrum (Agile).";
+            p.innerHTML = "Waterfall, <b>Scrum (Agile)</b>.";
             break;
 		case 4:
             h3.innerHTML = "Operating Systems";
@@ -146,22 +146,22 @@ function expClick(a) {
 		case 1:
             h3.innerHTML = "AdNovum";
 			div.innerHTML = "<span id='title'>Junior Software Developer</span><span id='period'>Oct 2015 – Feb 2016</span>";
-            p.innerHTML = "Enhanced customers’ experience by designing and building a banking application for the biggest bank in Switzerland with the cooperation of the software development team from Switzerland, Hungary, Singapore and Vietnam.<br></br>Boosted customers’ investments to the bank by creating personalized investment options from analyzing their collected data.<br></br><b><u>Skills:</u></b><br></br>Eclipse RCP framework, core Java, GIT for versions control, Jenkins for build and deploy, JIRA for tasks assignment, Collaborator for code review.";
+            p.innerHTML = "Enhanced customers’ experience by designing and building an automated investment management application for a global leader in wealth management (UBS) with the cooperation of the software development team of 15 people from 4 countries via phone, video calls and in-person meetings.<br></br>Boosted customers’ investments to the bank up to 15% by creating personalized investment options from analyzing their collected data.<br></br><b><u>Skills:</u></b><br></br>Eclipse RCP, Spring, SOAP, JPA, Java, Oracle DB, JUnit, GIT, Jenkins, JIRA, Collaborator, Linux, Maven.";
             break;
 		case 2:
             h3.innerHTML = "FPT Software";
 			div.innerHTML = "<span id='title'>Software Developer (Intern)</span><span id='period'>Jan 2014 – Aug 2014</span>";
-            p.innerHTML = "<b><u>Projects:</u></b><br></br><b><u style='color:blue'>DPET:</u></b>&nbspDesigned and developed an Android application for Japanese customers from scratch, which utilizes speech and facial recognition to help customers and their pets to remotely and virtually interact to each other.<br></br><b><u style='color:blue'>AMWEB:</u></b>&nbspEnsured the TOSHIBA’s content management website is fully operational through vigorously testing and fixing bugs by utilizing HTML, CSS, and JavaScript.<br></br><b><u style='color:blue'>CPS:</u></b>&nbspImproved the user experience when accessing the bus services from FUSO corporation by migrating the existing C++ bus line management application into a website, using Java, HTML, CSS and JavaScript.<br></br><b><u>Skills:</u></b><br></br>Java, JSP, Hibernate, JUnit, Android, DB2, SQLite, HTML, CSS, JavaScript, Android Speech Recognizer, SCRUM.";
+            p.innerHTML = "<b><u>Projects:</u></b><br></br><b><u style='color:blue'>DPET:</u></b>&nbspSelf-studied to design and develop an Android application for Japanese customers from scratch, which utilizes speech and facial recognition to help customers and their pets to remotely and virtually interact to each other. The application is then successfully presented to the client after 4 months.<br></br><b><u style='color:blue'>AMWEB:</u></b>&nbspEnsured the TOSHIBA’s content management website is fully operational through vigorously testing and fixing bugs by utilizing HTML, CSS, and JavaScript.<br></br><b><u style='color:blue'>CPS:</u></b>&nbspImproved the user experience when accessing the bus services from FUSO corporation by migrating the existing C++ bus line management application into a website, using Java, HTML, CSS and JavaScript.<br></br><b><u>Skills:</u></b><br></br>Java, JSP, Hibernate, JUnit, Android, DB2, SQLite, HTML, CSS, JavaScript, Maven, Gradle, SCRUM.";
             break;
 		case 3:
             h3.innerHTML = "Conestoga College";
 			div.innerHTML = "<span id='title'>Capstone Project</span><span id='period'>Jan 2019 – Apr 2019</span>";
-            p.innerHTML = "Improved the usability of the Hospital Management System by piloting its main features from desktop-based application to mobile (Android/iOS) versions.<br></br>Propitiated users (patients, doctors and nurses) in their daily tasks through the implementation of appointments management feature on mobile applications.<br></br>Increased users’ retention by integrating Notifications feature which alerts the users for their immediate responses.<br></br><b><u>Skills:</u></b><br></br>Java for Android, Swift for iOS, MySQL for DB, Microsoft Project for project management, Trello for tasks management.";
+            p.innerHTML = "Improved the usability of the Hospital Management System by piloting its main features from desktop-based application to mobile (Android/iOS) versions.<br></br>Propitiated users (patients, doctors and nurses) in their daily tasks through the implementation of appointments management feature on mobile applications, which can save 50% of users’ time when booking appointments.<br></br>Increased users’ retention by integrating Notifications feature which alerts the users for their immediate responses.<br></br><b><u>Skills:</u></b><br></br>Java for Android, Swift for iOS, MySQL, Microsoft Project, Trello.";
             break;
 		case 4:
             h3.innerHTML = "FPT University";
 			div.innerHTML = "<span id='title'>Capstone Project</span><span id='period'>May 2015 – Aug 2015</span>";
-            p.innerHTML = "Enhanced tourists’ experience by providing customized suggested itineraries to maximize their utility through the use of data analytics.<br></br>Utilized algorithms to show the most efficient route with suggestions of nearby attractions and landmarks to the tourists.<br></br><b><u>Skills:</u></b><br></br>Spring Boot, Java, Trello, HTML, CSS, JavaScript, Google Map APIs, SQL.";
+            p.innerHTML = "Enhanced tourists’ experience by providing customized suggested itineraries to maximize their utility through the use of data analytics.<br></br>Utilized algorithms to show the most efficient route with suggestions of nearby attractions and landmarks to the tourists, which helps them to save 1-5 hours of driving depends on the number of destinations.<br></br><b><u>Skills:</u></b><br></br>Spring Boot, Java, Trello, HTML, CSS, JavaScript, Google Map APIs, SQL, Maven, JUnit, Bootstrap.";
             break;
         default:
             break;
@@ -177,12 +177,12 @@ function eduClick(a) {
 		case 1:
             h3.innerHTML = "Conestoga College (Kitchener, ON)";
 			div.innerHTML = "<span id='title'>Mobile Solutions Development (Postgraduate)</span><span id='period'>Sep 2017 – Apr 2019</span>";
-            p.innerHTML = "<b><u style='color:blue'>GPA:</u></b>&nbsp3.86/4.00<br></br><b><u style='color:blue'>Certificates:</u></b>&nbspGraduation with Distinction, Dean’s Honour List.<br></br><b><u style='color:blue'>Courses:</u></b>&nbspC# Programming, UI Design, System Design and Development, Android, Database Management, Web Technologies, Software Quality Assurance, iOS development, Design Patterns, Computer and Application Security.<br></br><b><u style='color:blue'>Outcomes:</u></b>&nbspAll my software development skills and knowledge have been significantly sharpened and improved in detail.";
+            p.innerHTML = "<b><u style='color:blue'>GPA:</u></b>&nbsp3.86/4.00<br></br><b><u style='color:blue'>Certificates:</u></b>&nbspGraduation with Distinction, Dean’s Honour List, Co-Curricular Record.<br></br><b><u style='color:blue'>Courses:</u></b>&nbspC# Programming, UI Design, System Design and Development, Android, Database Management, Web Technologies, Software Quality Assurance, iOS development, Design Patterns, Computer and Application Security.<br></br><b><u style='color:blue'>Outcomes:</u></b>&nbspAll my software development skills and knowledge have been significantly sharpened and improved in detail.";
             break;
 		case 2:
             h3.innerHTML = "FPT University (Ho Chi Minh, Vietnam)";
 			div.innerHTML = "<span id='title'>Software Engineering (Bachelor)</span><span id='period'>Sep 2011 – Sep 2015</span>";
-            p.innerHTML = "<b><u style='color:blue'>GPA:</u></b>&nbsp7.92/10.00<br></br><b><u style='color:blue'>Certificates:</u></b>&nbspEXCELLENT student (1 semester), GOOD student (3 semesters), Highest Grade in Advanced Math.<br></br><b><u style='color:blue'>Courses:</u></b>&nbspJava, C# .NET, Data Structure and Algorithms, Object Oriented Paradigm, Database, Software Architect and Design, Web Development, Operating System, Advanced Math, Discrete Math, Statistic and Probability, Software Requirements, Software Quality and Testing, Human Computer Interaction, Project Management, Computer Network, Cloud Computing.<br></br><b><u style='color:blue'>Outcomes:</u></b>&nbspI gained the general understanding of all aspects of the software engineering, from analyzing customer’s requirements to design, implementation, testing and maintenance; especially, my Java and SQL skills.";
+            p.innerHTML = "<b><u style='color:blue'>Certificates:</u></b>&nbspHighest Grade in Advanced Math, Programming Foundations with JavaScript, HTML and CSS (online course from Duke University).<br></br><b><u style='color:blue'>Courses:</u></b>&nbspJava, C# .NET, Data Structure and Algorithms, Object Oriented Paradigm, Database, Software Architect and Design, Web Development, Operating System, Advanced Math, Discrete Math, Statistic and Probability, Software Requirements, Software Quality and Testing, Human Computer Interaction, Project Management, Computer Network, Cloud Computing.<br></br><b><u style='color:blue'>Outcomes:</u></b>&nbspI gained the general understanding of all aspects of the Software Development Life Cycle, from analyzing customer’s requirements to design, implementation, testing and maintenance; especially, my Java and SQL skills.";
             break; 
         default:
             break;
